@@ -288,7 +288,7 @@ def main_spirale():
 Note that the app relies on several helper functions, including generate_spiral(), generate_circle(), generate_heart(), ODE(), ResNet(), train_model().
     """
     st.title("Shape Fitting with Neural ODEs")
-    st.write("This app generates shapes using Neural ODEs. Choose the shape, with the noise and (the best visualization of spiral comes with noise=0 and irregularities=0.1). You'll also have to count five to ten minutes to train the Neural ODEs.")
+    st.write("This app generates shapes then fits the shape by training a Resnet or Neural ODE. Choose the shape, with the noise and (the best visualization of spiral comes with noise=0 and irregularities=0.1). Then, choose whether you want Neural ODEs, Resnets or both. You'll also have to count five to ten minutes to train the Neural ODEs.")
     st.write("However, we included the code R.T.Q. Chen for a better generalisation of the fit (see sidebar).")
 # Generate a new shape
     st.sidebar.subheader("Generate a new shape")
